@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Forty Five | Irish Card Game | MonolithicGames.com</title>
+    <link rel="stylesheet" href="ffcards.css">
+    <link rel="stylesheet" href="default.css">
+    <link rel="prefetch" href="card.js">
+    <link rel="prefecth" href="ffgame.js">
+    <link rel="prefecth" href="ffdeck.js">
+    
+  </head>
+    
+    <body>
+        
+    
+    <div id="headerContainer">
+    <div id="welcomeHeader">
+
+        <h3>Welcome to Irish Forty Five card game app v0.1!</h3>
+        
+        <div>
+        <img src="cardimages/45-joker-splash.png" style="float:left" alt="45 - Joker Image" width="110" height="146" position="relative">
+        </div> 
+
+            <div margin-left="135px" position="relative">   
+                <p>This app is based on the card game 45 or Forty Five, using the rules played in Ireland. </p>
+
+                    <p><a href="http://en.wikipedia.org/wiki/Forty-fives" target="_blank">Read the rules of Forty Five.</a>
+                    </p>
+                <p>
+
+                <button type="submit" onclick="deal();return false;">Deal Cards</button>
+
+                <button type="submit" onclick="shuffle();return false;">Shuffle Deck</button>
+
+                <button type="submit" onclick="discard();return false;">Discard All</button>
+
+                <button type="submit" onclick="reset();return false;">Reset Deck</button>
+                
+                </p>
+
+                <p>Click the buttons above to start playing</p>
+
+            </div>
+        </div>
+    </div>
+
+<p margin="25px"></p>
+
+    <div id="mainPlayingArea">
+
+        <div id="gamePlayAreaHands">
+        <div id="deck"     class="deckArea"></div>
+        <div id="trump"    class="trumpSuitArea"></div>
+                <div id="playerHand"     class="playerHandArea" draggable="true"></div>
+                <div id="player2Hand"     class="player2HandArea"></div>
+                <div id="player3Hand"     class="player3HandArea"></div>
+                <div id="player4Hand"     class="player4HandArea"></div>
+        <div id="discards" class="discardsArea"></div>
+
+        </div>
+
+    </div>
+    
+    <div id="textForms">
+
+        <form action="" onsubmit="return false;">
+        <div style="float:left;padding-left:1em;margin-right:1.4em;">
+            
+            <b>Deck:</b><br />
+                <textarea rows="10" cols="20"></textarea>
+        
+        </div>
+
+        <div style="float:left;margin-right:1.4em;">
+            
+            <b>Trump Suit:</b><br />
+                <textarea rows="10" cols="20"></textarea>
+        
+        </div>
+
+        <div style="float:left;margin-right:1.4em;">
+            
+            <b>MY Hand:</b><br />
+                <textarea rows="10" cols="20"></textarea>
+        
+        </div>
+
+        <div style="float:left;margin-right:1.4em;">
+            
+            <b>Player 2 Hand:</b><br />
+                <textarea rows="10" cols="20"></textarea>
+        
+        </div>
+
+        <div style="float:left;margin-right:1.4em;">
+            
+            <b>Player 3 Hand:</b><br />
+                <textarea rows="10" cols="20"></textarea>
+        </div>
+
+        <div style="float:left;margin-right:1.4em;">
+            
+            <b>Player 4 Hand:</b><br />
+                <textarea rows="10" cols="20"></textarea>
+        
+        </div>
+
+        <div style="float:left;margin-right:1em;">
+            
+            <b>Discards:</b><br />
+                <textarea rows="10" cols="20"></textarea>
+        
+        </div>
+
+</div>
+    <script src="ffgame.js"></script>
+    <script src="ffdeck.js"></script>
+    <script src="card.js"></script>
+  </body>
+</html>

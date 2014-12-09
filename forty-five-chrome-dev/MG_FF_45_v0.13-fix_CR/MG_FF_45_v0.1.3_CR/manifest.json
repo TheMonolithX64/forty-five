@@ -1,0 +1,34 @@
+{
+  "manifest_version": 2,
+  "name": "45 | Irish Forty Five | Monolithic Games",
+  "version": "0.0.13",
+  "short_name": "Forty Five",
+  "description": "Card game web app of Forty Five, with Irish rules, by Monolithic Games.",
+  "icons": {
+    "16": "45-icon-small-16.png",
+    "48": "45-icon-med-48.png",
+    "32": "45-icon-med-32.png",
+    "128": "45-icon-big-128.png"
+    },
+  "app": {
+    "background": {
+      "scripts": [
+          "background.js", 
+          "kCard.js",
+          "kHand.js",
+          "kDeck.js",
+          "kGame.js"
+          ],
+      "persistent": false
+    },
+    "content_scripts": [
+        {
+        "js": [
+            "cards.js", 
+            "ffdeck.js", 
+            "ffgame.js"
+            ]
+        }
+  ]
+  }
+}

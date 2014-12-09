@@ -1,0 +1,71 @@
+/******************************************************************************
+* Defines default styles for site pages. 
+* Forty Five web app v0.1
+* @author Stephen Barry | Monolithic Games | Aug 22nd 2014                                     *
+******************************************************************************/
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+html {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  background-color: #0da00b;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  height: 100%;
+}
+
+@-webkit-keyframes switch-green {
+  from { background-color: white;} to {background-color: rgb(163, 255, 163);}
+}
+@-webkit-keyframes switch-red {
+  from { background-color: white;} to {background-color: rgb(255, 203, 203);}
+}
+.dragging {
+  -webkit-animation: switch-green 0.5s ease-in-out 0 infinite alternate;
+}
+
+.invalid-dragging {
+  -webkit-animation: switch-red 0.5s ease-in-out 0 infinite alternate;
+}
+
+ul {
+  list-style: none;
+  max-height: 120px;
+  overflow-y: auto;
+}
+
+button, input[type=submit] {
+  background-color: #D31F26;
+  color: white;
+}
+
+#headerContainer {
+  padding: 10px;
+  height: 125px;
+  max-width: 100%;
+}
+
+.welcomeHeader {
+  border-color: #000000;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.done-true {
+  text-decoration: line-through;
+  colour: red;
+}
+
+.footer {
+  margin-bottom: 0px;
+  text-align: center;
+}
