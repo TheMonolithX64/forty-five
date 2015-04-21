@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <title>Forty Five | Irish Card Game | MonolithicGames.com</title>
+    <link rel="stylesheet" href="ffcards.css">
+    <link rel="stylesheet" href="default.css">
+    <link rel="prefetch" href="background.js">
+    <link rel="prefetch" href="jquery-2.1.1.js">
+    <link rel="prefetch" href="ffcard.js">
+    <link rel="prefecth" href="ffgame.js">
+    <link rel="prefecth" href="ffdeck.js">
+    <link rel="prefecth" href="cardimages/45-joker-splash.png">
+    <link rel="prefecth" href="45-promo.png">
+    <link rel="prefecth" href="45-AceHearts.png">
+    <link rel="prefetch" href="cardimages/b.png">
+  </head>
+    
+    <body>
+    <div id = "main">
+    <div id="headerContainer">
+
+        <h3>Welcome to Irish Forty Five card game app v0.1.5!</h3>
+
+                <button id="dealbtn">Deal Cards</button>
+
+                <button id="shufflebtn">Shuffle Deck</button>
+
+                <button id="discardbtn">Discard All</button>
+
+                <button id="resetbtn">Reset Deck</button>
+
+                <button id="newgamebtn">New Game</button>
+
+                <p>Click the buttons above to start playing (scroll down to see your cards).</p>
+
+    </div>
+
+<p margin="25px"></p>
+
+    <div id="mainPlayingArea">
+
+        <div id="gamePlayAreaHands">
+        <div id="deck"     class="deckArea"></div>
+        <div id="trump"    class="trumpSuitArea"></div>
+                <div id="playerHand"    class="playerHandArea" draggable="true"></div>
+                <div id="player2Hand"   class="player2HandArea" draggable="true"></div>
+                <div id="player3Hand"   class="player3HandArea" draggable="true"></div>
+                <div id="player4Hand"   class="player4HandArea" draggable="true"></div>
+                <div id="discards"      class="discardsArea"></div>
+                    <div id="p1SelectTemp" class="p1TrickStack"></div>
+                    <div id="p2SelectTemp" class="p1TrickStack"></div>
+                    <div id="p3SelectTemp" class="p1TrickStack"></div>
+                    <div id="p4SelectTemp" class="p1TrickStack"></div>
+
+                    <div id="p1TrickStack"      class="p1TrickStack"></div>
+                    <div id="p2TrickStack"      class="p2TrickStack"></div>
+                    <div id="p3TrickStack"      class="p3TrickStack"></div>
+                    <div id="p4TrickStack"      class="p4TrickStack"></div>
+        </div>
+
+    </div>
+</div>
+    
+    <div id="textForms">
+
+        <form action="" onsubmit="return false;">
+        <div style="float:left;padding-left:1em;margin-right:1.4em;">
+            
+            <b>Deck:</b><br />
+                <textarea rows="10" cols="20"></textarea>
+        
+        </div>
+
+        <div style="float:left;margin-right:1.4em;">
+            
+            <b>Trump Suit:</b><br />
+                <textarea rows="10" cols="20"></textarea>
+        
+        </div>
+
+        <div style="float:left;margin-right:1.4em;">
+            
+            <b>Player 2 Hand:</b><br />
+                <textarea rows="10" cols="20"></textarea>
+        
+        </div>
+
+        <div style="float:left;margin-right:1.4em;">
+            
+            <b>MY Hand:</b><br />
+                <textarea rows="10" cols="20"></textarea>
+        
+        </div>
+
+        <div style="float:left;margin-right:1.4em;">
+            
+            <b>Player 3 Hand:</b><br />
+                <textarea rows="10" cols="20"></textarea>
+        </div>
+
+        <div style="float:left;margin-right:1.4em;">
+            
+            <b>Player 4 Hand:</b><br />
+                <textarea rows="10" cols="20"></textarea>
+        
+        </div>
+
+        <div style="float:left;margin-right:1em;">
+            
+            <b>Discards:</b><br />
+                <textarea rows="10" cols="20"></textarea>
+        
+        </div>
+
+        <div style="float:left;margin-right:1em;">
+            
+            <b>P1 in play:</b><br />
+                <textarea rows="10" cols="20"></textarea>
+        
+        </div>
+
+        <div style="float:left;margin-right:1em;">
+            
+            <b>P2 in play:</b><br />
+                <textarea rows="10" cols="20"></textarea>
+        
+        </div>
+
+        <div style="float:left;margin-right:1em;">
+            
+            <b>P3 in play:</b><br />
+                <textarea rows="10" cols="20"></textarea>
+        
+        </div>
+
+        <div style="float:left;margin-right:1em;">
+            
+            <b>P4 in play:</b><br />
+                <textarea rows="10" cols="20"></textarea>
+        
+        </div>
+
+</div>
+    <script src"background.js"></script>
+    <script src"jquery-2.1.1.js"></script>
+    <script src="ffgame.js"></script>
+    <script src="ffdeck.js"></script>
+    <script src="ffcard.js"></script>
+    <scrpt src="trumpSuitPopup.js"></script>
+
+  </body>
+</html>
